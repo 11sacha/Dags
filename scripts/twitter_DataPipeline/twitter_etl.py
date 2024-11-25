@@ -2,13 +2,14 @@ import tweepy
 import pandas as pd
 import json
 from datetime import datetime
-import s3fs
 from dotenv import load_dotenv
+import boto3
+import os
 
-FilePath = os.path.dirname(__file__)
-os.chdir('../')
-ProjectPath = os.getcwd()
+ProjectPath = os.path.dirname(__file__)
+print(ProjectPath)
 OutputPath = os.path.join(ProjectPath, r'Output')
+print(OutputPath)
 
 def run_process():
 
@@ -33,6 +34,7 @@ def run_process():
     )
 
     username = "elonmusk"
+    #username = input('Type twitter username..')
     max_count = 100
     response = client.get_user(username=username)
 
@@ -64,13 +66,25 @@ def run_process():
 
             tweet_list.append(redefined_tweet)
 
-    #Upload file to S3 BUCKET
-    s3 = boto3.client('s3', aws_access_key_id=AWS_ACCESS_KEY, aws_secret_access_key=AWS_SECRET_KEY)
-
     #Save file on local repo
     df = pd.DataFrame(tweet_list)
-    file_name = f'Outputfile{date.now().strftime("%Y%m%d")}.csv'
-    df.to_csv(os.path.join(OutputPath, file_name), index=False)
+    file_name = f'Tweets_{username}_{datetime.now().strftime("%Y%m%d")}.csv'
+    file_path = os.path.join(OutputPath, file_name)
+    df.to_csv(file_path, index=False)
 
-    print(f'Tweets save to {file_name}')
+    print(f'Tweets save to {file_path}')
+
+    #Upload file to S3 BUCKET
+    print('Uploading to S3 Bucket..')
+    s3 = boto3.client('s3', aws_access_key_id=AWS_ACCESS_KEY, aws_secret_access_key=AWS_SECRET_KEY)
+
+    bucket_name = 'twitter-datapipeline'
+
+    with open(file_path, 'rb') as f:
+        s3.put_object(Bucket=bucket_name, Key=file_name, Body=f)
+
+    print(f'Tweets uploaded to S3 as {file_name}')
+
+    
+#run_process()
 
