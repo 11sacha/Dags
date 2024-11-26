@@ -54,7 +54,6 @@ def run_process():
     tweet_list = []
     if tweets.data:
         for tweet in tweets.data:
-            #text = tweet._json['full_text']
 
             redefined_tweet = {
                 'user': username,
@@ -70,6 +69,7 @@ def run_process():
     df = pd.DataFrame(tweet_list)
     file_name = f'Tweets_{username}_{datetime.now().strftime("%Y%m%d")}.csv'
     file_path = os.path.join(OutputPath, file_name)
+    file_path = os.path.join(OutputPath, 'Outputfile.csv')
     df.to_csv(file_path, index=False)
 
     print(f'Tweets save to {file_path}')
@@ -86,5 +86,5 @@ def run_process():
     print(f'Tweets uploaded to S3 as {file_name}')
 
     
-#run_process()
+run_process()
 
