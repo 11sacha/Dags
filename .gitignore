@@ -1,3 +1,5 @@
 .env
 
 scripts/twitter_DataPipeline/.venv
+
+scripts/passwords.py
