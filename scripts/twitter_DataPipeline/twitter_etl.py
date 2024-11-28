@@ -86,5 +86,5 @@ def run_process():
     print(f'Tweets uploaded to S3 as {file_name}')
 
     
-run_process()
+#run_process()
 
