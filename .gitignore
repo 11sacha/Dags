@@ -3,3 +3,5 @@
 scripts/twitter_DataPipeline/.venv
 
 scripts/passwords.py
+
+scripts/AmazonBooksETL/Scripts/insert_bkp.py

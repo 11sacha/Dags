@@ -1,51 +1,51 @@
 ,Title,Author,Price,Rating
-0,Data Engineering with AWS - Second Edition: Acquire the skills to design and build AWS-based data transformation pipelines like a pro,Gareth Eagar,41.,4.2 out of 5 stars
-1,Data Engineering 101,Paperback,22.,3.9 out of 5 stars
-2,"Data Engineering Foundations: Core Techniques for Data Analysis with Pandas, NumPy, and Scikit-Learn (Advanced Data Analysis Series)",Paperback,49.,5.0 out of 5 stars
-3,"Data Engineering with Databricks Cookbook: Build effective data and AI solutions using Apache Spark, Databricks, and Delta Lake",Pulkit Chadha,49.,4.4 out of 5 stars
-4,Fundamentals of Data Engineering: Plan and Build Robust Data Systems,Joe Reis,39.,4.7 out of 5 stars
-5,Data Engineering Best Practices: Architect robust and cost-effective data solutions in the cloud era,Richard J. Schiller,49.,5.0 out of 5 stars
-6,"Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",Martin Kleppmann,47.,4.7 out of 5 stars
-7,Data Pipelines Pocket Reference: Moving and Processing Data for Analytics,James Densmore,17.,4.5 out of 5 stars
-8,Data Engineering with Python: Work with massive datasets to design data models and automate data pipelines using Python,Paul Crickard,37.,4.1 out of 5 stars
-9,"Cracking the Data Engineering Interview: Land your dream job with the help of resume-building tips, over 100 mock questions, and a unique portfolio",Kedeisha Bryan,26.,4.3 out of 5 stars
-10,"Data Engineering with dbt: A practical guide to building a cloud-based, pragmatic, and dependable data platform with SQL",Roberto Zagni,37.,4.6 out of 5 stars
-11,"Data Engineering with Apache Spark, Delta Lake, and Lakehouse: Create scalable pipelines that ingest, curate, and aggregate complex data in a timely and secure way",Manoj Kukreja,46.,3.9 out of 5 stars
-12,"Ace the Data Engineering Interview: Questions and Answers for Python, SQL, Data Modeling and More",Sean Coyne,0.,3.8 out of 5 stars
-13,"The Data Engineering Handbook: We are Data Engineers, we make things happen, we pull rabbits out of hats, and transform raw, noisy data into gold.",Paperback,9.,5.0 out of 5 stars
-14,Data Engineering with AWS: Learn how to design and build cloud-based data transformation pipelines using AWS,Gareth Eagar,49.,4.4 out of 5 stars
-15,Data Engineering with Python cookbook: Learn to build efficient data pipelines using the Modern Cloud Data Stack,Adithyan Ramanujakootam,32.,5.0 out of 5 stars
-16,How to Become a Data Scientist: A Guide for Established Professionals,Adam Ross Nelson,29.,4.4 out of 5 stars
-17,"Fundamentals of Data Engineering: A Comprehensive Guide to Designing, Building, and Managing Data Pipelines, Storage Solutions, and Processing Frameworks.",Sam Green,14.,5.0 out of 5 stars
-18,"Data: Principles To Practice - Volume 1 'Foundations': Essential Foundations: Key Concepts behind Data Architecture, Engineering and Analysis for Professionals",Paperback,14.,4.6 out of 5 stars
-19,Software Engineering for Data Scientists: From Notebooks to Scalable Systems,Catherine Nelson,45.,4.3 out of 5 stars
-20,97 Things Every Data Engineer Should Know: Collective Wisdom from the Experts,Tobias Macey,28.,4.2 out of 5 stars
-21,Data Engineering with Google Cloud Platform: A practical guide to operationalizing scalable data analytics systems on GCP,Adi Wijaya,37.,4.7 out of 5 stars
-22,"Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control",Steven L. Brunton,61.,4.7 out of 5 stars
-23,Azure Data Engineer Associate Certification Guide: Ace the DP-203 exam with advanced data engineering skills,Giacinto Palmieri,49.,4.3 out of 5 stars
-24,Azure Data Factory Cookbook: A data engineer's guide to building and managing ETL and ELT pipelines with data integration,Dmitry Foshin,51.,4.1 out of 5 stars
-25,Data Engineering with Google Cloud Platform: A guide to leveling up as a data engineer by building a scalable data platform with Google Cloud,Adi Wijaya,40.,4.8 out of 5 stars
-26,"Data Engineering Foundations: Core Techniques for Data Analysis with Pandas, NumPy, and Scikit-Learn (Advanced Data Analysis Series Book 1)",Kindle,44.,5.0 out of 5 stars
-27,Storytelling with Data: A Data Visualization Guide for Business Professionals,Cole Nussbaumer Knaflic,27.,4.6 out of 5 stars
-28,LLM Engineer's Handbook: Master the art of engineering large language models from concept to production,Paul Iusztin,56.,4.6 out of 5 stars
-29,Essentials of Data Engineering,Dr. Mukesh Saini,19.,5.0 out of 5 stars
-30,Ultimate Data Engineering with Databricks,Mayank Malhotra,18.,4.1 out of 5 stars
-31,Fundamentals of Analytics Engineering: An introduction to building end-to-end analytics solutions,Dumky De Wilde,27.,3.9 out of 5 stars
-32,Machine Learning Engineering,Andriy Burkov,39.,4.7 out of 5 stars
-33,Modeling and Simulation in Python: An Introduction for Scientists and Engineers,Allen B. Downey,28.,4.5 out of 5 stars
-34,"Python Data Engineering Resources: Forge Your Path to Success in Data Engineering, Machine Learning and AI (Future-Proof Tech Skills: Including AI, Python, SQL, Linux And More Book 1)",Kindle,0.,4.9 out of 5 stars
-35,"Fundamentals of Data Analytics: Learn Essential Skills, Embrace the Future, and Catapult Your Career in the Data-Driven World—A Comprehensive Guide to Data Literacy for Beginners",Russell Dawson,17.,4.7 out of 5 stars
-36,Official Google Cloud Certified Professional Data Engineer Study Guide,Dan Sullivan,33.,4.5 out of 5 stars
-37,Azure Data Engineering Cookbook - Second Edition: Get well versed in various data engineering techniques in Azure using this recipe-based guide,Nagaraj Venkatesan,49.,3.6 out of 5 stars
-38,Data Mesh: Delivering Data-Driven Value at Scale,Zhamak Dehghani,43.,4.5 out of 5 stars
-39,Data Modeling with Snowflake: A practical guide to accelerating Snowflake development using universal data modeling techniques,Serge Gershkovich,36.,4.8 out of 5 stars
-40,Data Privacy: A runbook for engineers,Nishant Bhajaria,35.,4.8 out of 5 stars
-41,"DATA ENGINEERING AND AI FOR BEGINNERS: Revolutionizing Data Processing and Analytics by Leveraging Artificial Intelligence for Efficient Input Collection, Storage, and Transformation (World of AI)",Kindle,0.,4.4 out of 5 stars
-42,Prompt Engineering for Generative AI: Future-Proof Inputs for Reliable AI Outputs,James Phoenix,53.,4.5 out of 5 stars
-43,Data Engineering with AWS,May Sherry,14.,5.0 out of 5 stars
-44,Analytics Engineering with SQL and dbt: Building Meaningful Data Models at Scale,Rui Pedro Machado,41.,3.9 out of 5 stars
-45,"The Definitive Guide to Azure Data Engineering: Modern ELT, DevOps, and Analytics on the Azure Cloud Platform",Ron C. L'Esteve,36.,3.9 out of 5 stars
-46,AWS Certified Data Analytics Study Guide: Specialty (DAS-C01) Exam,Asif Abbasi,26.,4.6 out of 5 stars
-47,Data Observability for Data Engineering: Proactive strategies for ensuring data accuracy and addressing broken data pipelines,Michele Pinto,36.,3.7 out of 5 stars
-48,Building ETL Pipelines with Python: Create and deploy enterprise-ready ETL pipelines by employing modern methods,Brij Kishore Pandey,34.,4.3 out of 5 stars
-49,Data Visualization with Microsoft Power BI: How to Design Savvy Dashboards,Alex Kolokolov,45.,4.9 out of 5 stars
+0,Data Engineering with AWS - Second Edition: Acquire the skills to design and build AWS-based data transformation pipelines like a pro,Gareth Eagar,41,4.2 out of 5 stars
+1,Data Engineering 101,Paperback,22,3.9 out of 5 stars
+2,"Data Engineering Foundations: Core Techniques for Data Analysis with Pandas, NumPy, and Scikit-Learn (Advanced Data Analysis Series)",Paperback,49,5.0 out of 5 stars
+3,"Data Engineering with Databricks Cookbook: Build effective data and AI solutions using Apache Spark, Databricks, and Delta Lake",Pulkit Chadha,49,4.4 out of 5 stars
+4,Fundamentals of Data Engineering: Plan and Build Robust Data Systems,Joe Reis,39,4.7 out of 5 stars
+5,"Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",Martin Kleppmann,47,4.7 out of 5 stars
+6,Data Engineering Best Practices: Architect robust and cost-effective data solutions in the cloud era,Richard J. Schiller,49,5.0 out of 5 stars
+7,Data Pipelines Pocket Reference: Moving and Processing Data for Analytics,James Densmore,17,4.5 out of 5 stars
+8,Data Engineering with Python: Work with massive datasets to design data models and automate data pipelines using Python,Paul Crickard,37,4.1 out of 5 stars
+9,"Cracking the Data Engineering Interview: Land your dream job with the help of resume-building tips, over 100 mock questions, and a unique portfolio",Kedeisha Bryan,26,4.3 out of 5 stars
+10,"Data Engineering with dbt: A practical guide to building a cloud-based, pragmatic, and dependable data platform with SQL",Roberto Zagni,37,4.6 out of 5 stars
+11,"Data Engineering with Apache Spark, Delta Lake, and Lakehouse: Create scalable pipelines that ingest, curate, and aggregate complex data in a timely and secure way",Manoj Kukreja,46,3.9 out of 5 stars
+12,"Ace the Data Engineering Interview: Questions and Answers for Python, SQL, Data Modeling and More",Sean Coyne,24,3.8 out of 5 stars
+13,"The Data Engineering Handbook: We are Data Engineers, we make things happen, we pull rabbits out of hats, and transform raw, noisy data into gold.",Paperback,9,5.0 out of 5 stars
+14,Data Engineering with Python cookbook: Learn to build efficient data pipelines using the Modern Cloud Data Stack,Adithyan Ramanujakootam,32,5.0 out of 5 stars
+15,Data Engineering with AWS: Learn how to design and build cloud-based data transformation pipelines using AWS,Gareth Eagar,49,4.4 out of 5 stars
+16,Azure Data Engineer Associate Certification Guide: Ace the DP-203 exam with advanced data engineering skills,Giacinto Palmieri,49,4.3 out of 5 stars
+17,"Python Data Engineering Resources: Forge Your Path to Success in Data Engineering, Machine Learning and AI (Future-Proof Tech Skills: Including AI, Python, SQL, Linux And More Book 1)",Kindle Edition,0,4.9 out of 5 stars
+18,Azure Data Factory Cookbook: A data engineer's guide to building and managing ETL and ELT pipelines with data integration,Dmitry Foshin,51,4.1 out of 5 stars
+19,Software Engineering for Data Scientists: From Notebooks to Scalable Systems,Catherine Nelson,45,4.3 out of 5 stars
+20,97 Things Every Data Engineer Should Know: Collective Wisdom from the Experts,Tobias Macey,28,4.2 out of 5 stars
+21,Data Engineering with Google Cloud Platform: A practical guide to operationalizing scalable data analytics systems on GCP,Adi Wijaya,37,4.7 out of 5 stars
+22,"Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control",Steven L. Brunton,61,4.7 out of 5 stars
+23,"Fundamentals of Data Engineering: A Comprehensive Guide to Designing, Building, and Managing Data Pipelines, Storage Solutions, and Processing Frameworks.",Sam Green,14,5.0 out of 5 stars
+24,"Data: Principles To Practice - Volume 1 'Foundations': Essential Foundations: Key Concepts behind Data Architecture, Engineering and Analysis for Professionals",Paperback,14,4.6 out of 5 stars
+25,Data Engineering with Google Cloud Platform: A guide to leveling up as a data engineer by building a scalable data platform with Google Cloud,Adi Wijaya,40,4.8 out of 5 stars
+26,"Data Engineering Foundations: Core Techniques for Data Analysis with Pandas, NumPy, and Scikit-Learn (Advanced Data Analysis Series Book 1)",Kindle,44,5.0 out of 5 stars
+27,Storytelling with Data: A Data Visualization Guide for Business Professionals,Cole Nussbaumer Knaflic,27,4.6 out of 5 stars
+28,LLM Engineer's Handbook: Master the art of engineering large language models from concept to production,Paul Iusztin,56,4.6 out of 5 stars
+29,Essentials of Data Engineering,Dr. Mukesh Saini,19,5.0 out of 5 stars
+30,Ultimate Data Engineering with Databricks,Mayank Malhotra,18,4.1 out of 5 stars
+31,Fundamentals of Analytics Engineering: An introduction to building end-to-end analytics solutions,Dumky De Wilde,27,3.9 out of 5 stars
+32,Data Management at Scale: Modern Data Architecture with Data Mesh and Data Fabric,Piethein Strengholt,47,4.5 out of 5 stars
+33,Modeling and Simulation in Python: An Introduction for Scientists and Engineers,Allen B. Downey,39,4.5 out of 5 stars
+34,Machine Learning Engineering,Andriy Burkov,39,4.7 out of 5 stars
+35,"Fundamentals of Data Analytics: Learn Essential Skills, Embrace the Future, and Catapult Your Career in the Data-Driven World—A Comprehensive Guide to Data Literacy for Beginners",Russell Dawson,17,4.7 out of 5 stars
+36,Official Google Cloud Certified Professional Data Engineer Study Guide,Dan Sullivan,33,4.5 out of 5 stars
+37,Azure Data Engineering Cookbook - Second Edition: Get well versed in various data engineering techniques in Azure using this recipe-based guide,Nagaraj Venkatesan,49,3.6 out of 5 stars
+38,Data Mesh: Delivering Data-Driven Value at Scale,Zhamak Dehghani,43,4.5 out of 5 stars
+39,"DATA ENGINEERING AND AI FOR BEGINNERS: Revolutionizing Data Processing and Analytics by Leveraging Artificial Intelligence for Efficient Input Collection, Storage, and Transformation (World of AI)",Kindle,0,4.4 out of 5 stars
+40,Data Privacy: A runbook for engineers,Nishant Bhajaria,35,4.8 out of 5 stars
+41,AWS Certified Data Analytics Study Guide: Specialty (DAS-C01) Exam,Asif Abbasi,26,4.6 out of 5 stars
+42,Prompt Engineering for Generative AI: Future-Proof Inputs for Reliable AI Outputs,James Phoenix,53,4.5 out of 5 stars
+43,Azure Data Engineer Associate Certification Guide: A hands-on reference guide to developing your data engineering skills and preparing for the DP-203 exam,Newton Alex,54,3.9 out of 5 stars
+44,Data Modeling with Snowflake: A practical guide to accelerating Snowflake development using universal data modeling techniques,Serge Gershkovich,36,4.8 out of 5 stars
+45,Data Engineering with AWS,May Sherry,14,5.0 out of 5 stars
+46,Building ETL Pipelines with Python: Create and deploy enterprise-ready ETL pipelines by employing modern methods,Brij Kishore Pandey,34,4.3 out of 5 stars
+47,Analytics Engineering with SQL and dbt: Building Meaningful Data Models at Scale,Rui Pedro Machado,41,3.9 out of 5 stars
+48,Data Visualization with Microsoft Power BI: How to Design Savvy Dashboards,Alex Kolokolov,45,4.9 out of 5 stars
+49,Data Observability for Data Engineering: Proactive strategies for ensuring data accuracy and addressing broken data pipelines,Michele Pinto,36,3.7 out of 5 stars

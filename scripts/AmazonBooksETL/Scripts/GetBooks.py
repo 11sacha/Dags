@@ -23,6 +23,7 @@ headers = {
 
 def get_amazon_books(numb_books):
 
+    #Check if an old file exists and removes it
     files = ['BooksFile.csv']
 
     for file in files:
@@ -39,6 +40,7 @@ def get_amazon_books(numb_books):
 
     page = 1
 
+    #Web scrapping area
     while len(books) < numb_books:
         url = f"{base_url}&page={page}"
         response = requests.get(url, headers=headers)
@@ -65,7 +67,7 @@ def get_amazon_books(numb_books):
                         books.append({
                             "Title": book_title,
                             "Author": author.text.strip(),
-                            "Price": price.text.strip(),
+                            "Price": price.text.strip().replace('.', ''),
                             "Rating": rating.text.strip(),
                         })
 
@@ -94,7 +96,7 @@ def get_amazon_books(numb_books):
 def run_process():
     get_amazon_books(50)
 
-#run_process()
+run_process()
 
 
 
