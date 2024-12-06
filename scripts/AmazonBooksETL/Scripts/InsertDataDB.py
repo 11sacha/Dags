@@ -1,45 +1,72 @@
 import os
 import warnings
 import pandas as pd
+from dotenv import load_dotenv
 from sqlalchemy import create_engine, Sequence, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-from dotenv import load_dotenv
+
 warnings.filterwarnings('ignore')
 
-# Define relative routes
-FilePath = os.path.dirname(__file__)
-os.chdir(os.path.join(FilePath, '../'))
-ProjectPath = os.getcwd()
-FilesFolderPath = os.path.join(ProjectPath, r'Files')
-BooksFile = os.path.join(FilesFolderPath, 'BooksFile.csv')
+def order_df_columns(df, new_order):
+    return df.reindex(columns=new_order)
 
-#load_dotenv()
-#DatabasePath = os.getenv(DB_PATH)
-DatabasePath = '/Users/sachaguimarey/Documents/DE/personal_db'
+def run_process():
+    # Define relative routes
+    FilePath = os.path.dirname(__file__)
+    os.chdir(os.path.join(FilePath, '../'))
+    ProjectPath = os.getcwd()
+    print(ProjectPath)
+    FilesFolderPath = os.path.join(ProjectPath, r'Files')
+    BooksFile = os.path.join(FilesFolderPath, 'BooksFile.csv')
 
-print('Connecting to SQLite database...')
-# SQLite connection string (using absolute path to the database file)
-engine = create_engine(f"sqlite:///{DatabasePath}")
-print('Connection successful!')
+    load_dotenv()
 
-Base = declarative_base()
+    Database = os.getenv('DB_NAME')
+    Username = os.getenv('DB_USER')
+    Password = os.getenv('DB_PASSWORD')
+    Schema = 'dags'
 
-class AmazonBooks(Base):
-    __tablename__ = 'amazonbooks'
-    id = Column(Integer, Sequence('books_id_seq', optional=True), primary_key=True)  # Sequence is optional in SQLite
-    title = Column(String)
-    author = Column(String)
-    price = Column(Integer)
-    rating = Column(String)
+    print(Database)
 
-df = pd.read_csv(BooksFile)
+    print('Connecting to db...')
+    engine = create_engine(
+        f"postgresql+psycopg2://{Username}:{Password}@localhost:5432/{Database}?options=-csearch_path%3Ddags"
+    )
+    print('Connection successful!')
 
-Base.metadata.create_all(engine)
+    print('Data transformation begins..')
+    Base = declarative_base()
 
-try:
-    #with engine.connect() as conn:
-        # Save the DataFrame to the SQLite database
-        df.to_sql('amazonbooks', con=engine, index=False, if_exists='append')
-        print("Data saved successfully!")
-except Exception as e:
-    print(f"There's been an error: {e}")
+    class AmazonBooks(Base):
+        __tablename__ = 'amazonbooks'
+        __table_args__ = {'schema': Schema}
+        id = Column(Integer, Sequence('books_id_seq'), primary_key=True)
+        title = Column(String)
+        author = Column(String)
+        price = Column(Integer)
+        rating = Column(String)
+
+    df = pd.read_csv(BooksFile)
+    if 'Unnamed: 0' in df.columns:
+        df = df.drop(columns=['Unnamed: 0'])
+
+    df['title'] = df['Title']
+    df['author'] = df['Author']
+    df['price'] = df['Price']
+    df['rating'] = df['Rating']
+
+    new_order = (['title', 'author', 'price', 'rating'])
+
+    df = order_df_columns(df, new_order)
+
+    print('Data transformation finished.')
+
+    try:
+        with engine.connect() as conn:
+            
+        #with engine.begin() as conn:
+            df.to_sql('amazonbooks', con=conn, schema=Schema, index=False, if_exists='append')
+            print("Data Saved!")
+        #print('Data saved successfully!')
+    except Exception as e:
+        print(f"There's been an error: {e}")
