@@ -15,6 +15,7 @@ def run_process():
     FilePath = os.path.dirname(__file__)
     os.chdir(os.path.join(FilePath, '../'))
     ProjectPath = os.getcwd()
+    print(FilePath)
     print(ProjectPath)
     FilesFolderPath = os.path.join(ProjectPath, r'Files')
     BooksFile = os.path.join(FilesFolderPath, 'BooksFile.csv')
@@ -70,3 +71,6 @@ def run_process():
         #print('Data saved successfully!')
     except Exception as e:
         print(f"There's been an error: {e}")
+
+
+run_process()
