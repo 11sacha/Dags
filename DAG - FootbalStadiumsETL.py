@@ -6,7 +6,7 @@ from scripts.WikipediaETL.Scripts import DataExtraction
 with DAG(   dag_id = 'FSP',
             start_date = datetime(2021, 1,1),
             schedule = '0 10 * * 1',
-            tags=['Amazon', 'ETL'],
+            tags=['Wikipedia', 'ETL', 'Football'],
             catchup = False) as dag:
 
             extraction = PythonOperator(
