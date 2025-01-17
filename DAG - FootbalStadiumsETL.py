@@ -1,7 +1,7 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-from scripts.WikipediaETL.Scripts import DataExtraction
+from scripts.WikipediaETL.Scripts import DataExtraction, DataTransformation
 
 with DAG(   dag_id = 'FSP',
             start_date = datetime(2021, 1,1),
@@ -17,4 +17,11 @@ with DAG(   dag_id = 'FSP',
                 owner = 'SG'
             )
 
-extraction
+            transformation = PythonOperator(
+                task_id = "transform_data",
+                python_callable = DataTransformation.run_process,
+                provide_context = True,
+                owner = 'SG'
+            )
+
+extraction >> transformation
